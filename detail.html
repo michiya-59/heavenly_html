@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/video_play.js"></script>
+  <script src="js/model_window.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header_left">
+        <img src="img/login_icon.png">
+      </div>
+      <ul class="header_right">
+        <li>
+          <a href="top.html">コース一覧</a>
+        </li>
+        <li>
+          <a href="admin.html">管理画面</a>
+        </li>
+        <li>
+          <a href="login.html">ログアウト</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="container">
+    <p class="user_name">西野倫也さん ログイン中</p>
+    <strong class="course_title">BO基礎知識講座</strong>
+    <div class="course_detail_list">
+      <div class="course_detail_part">
+        <div class="video">
+          <video id="myVideo" controls>
+            <source src="img/BO入門編 (1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video_bottom">
+          <strong>ライントレード 反発を理解する心得</strong>
+          <p>所要時間43分</p>
+          <div class="video_relation_btn">
+            <a href="" id="submitLink">課題提出</a>
+            <a href="img/【20230725版】shineアンケート用紙(業務委託契約時に作成).pdf" target="_blank">資料閲覧</a>
+          </div>
+        </div>
+      </div>
+      <div class="course_detail_part">
+        <div class="video">
+          <video id="myVideo" controls>
+            <source src="img/BO入門編 (1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video_bottom">
+          <strong>ライントレード 反発を理解する心得</strong>
+          <p>所要時間43分</p>
+          <div class="video_relation_btn">
+            <a href="" id="submitLink">課題提出</a>
+            <a href="img/【20230725版】shineアンケート用紙(業務委託契約時に作成).pdf" target="_blank">資料閲覧</a>
+          </div>
+        </div>
+      </div>
+      <div class="course_detail_part">
+        <div class="video">
+          <video id="myVideo" controls>
+            <source src="img/BO入門編 (1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video_bottom">
+          <strong>ライントレード 反発を理解する心得</strong>
+          <p>所要時間43分</p>
+          <div class="video_relation_btn">
+            <a href="" id="submitLink">課題提出</a>
+            <a href="img/【20230725版】shineアンケート用紙(業務委託契約時に作成).pdf" target="_blank">資料閲覧</a>
+          </div>
+        </div>
+      </div>
+      <div class="course_detail_part">
+        <div class="video">
+          <video id="myVideo" controls>
+            <source src="img/BO入門編 (1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video_bottom">
+          <strong>ライントレード 反発を理解する心得</strong>
+          <p>所要時間43分</p>
+          <div class="video_relation_btn">
+            <a href="" id="submitLink">課題提出</a>
+            <a href="img/【20230725版】shineアンケート用紙(業務委託契約時に作成).pdf" target="_blank">資料閲覧</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="top.html" class="back_btn">戻る</a>
+  </div>
+  <!-- モーダルウィンドウ -->
+  <div id="modal" class="modal">
+    <div class="modal_content">
+      <span class="close">&times;</span> <!-- バツボタン -->
+      <h2>課題提出</h2>
+      <form>
+        <label for="file">ファイルを選択（最大3つ）</label><br>
+        <input type="file" id="fileUpload" name="files[]" class="task_file" multiple><br>
+        <label for="reflection">達成した感想と、得れた学びを教えてください。必須</label><br>
+        <textarea id="reflection" name="reflection" rows="4"></textarea><br>
+        <input type="submit" value="課題を提出する" class="task_submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
